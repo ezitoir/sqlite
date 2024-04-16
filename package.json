@@ -1,0 +1,41 @@
+{
+  "name": "ezito-sqlite",
+  "main": "deps/sqlite3.js",
+  "version": "3.0.0",
+  "description": "The fastest and simplest async and sync library for SqLite3 in Node.js.",
+  "contributors": [
+    "muhammad ali aghajanpour"
+  ],
+  "repository": { "type": "git", "url": "https://github.com/ezitoir/sqlite.git" },
+  "author": {
+    "name": "muhammad ali aghajanpour",
+    "email": "mhmrasoul@gmail.com"
+  },
+  "scripts": {
+    "install": "node-gyp rebuild --release",
+    "postinstall": "node ./src/rfv.js ",
+    "rebuild": "node ./src/rf.js  && node-gyp rebuild --release"
+  },
+  "dependencies": {
+    "ezito-async": "^4.2.1",
+    "ezito-bindings": "^1.0.0",
+    "ezito-log": "^2.0.0",
+    "ezito-require": "^3.4.2",
+    "ezito-utils": "^3.0.0",
+    "node-gyp": "^10.0.1"
+  },
+  "files" : [
+    "src/*",
+    "deps/*",
+    "binding.gyp",
+    "README.md"
+  ],
+  "keywords": [
+    "sqlite3",
+    "sqlite3-sync",
+    "sqlite-async",
+    "node-sqlite",
+    "database",
+    "migration"
+  ]
+}
